@@ -43,9 +43,10 @@ no lorem ipsum, no invented statistics or quotes):
   umbrellas, each with character.
 - `field-notes.html` — umbrella field notes: observations, reflections, or
   informal "research" on lost umbrellas as a category of object. Essayistic.
-- `sightings.html` — a guestbook-style "sightings" page: an in-page list of
-  umbrella sightings presented as if submitted by visitors (written by me, not
-  a real form — there's no JS to submit anything).
+- `sightings.html` — a guestbook-style "sightings" page: my own running log
+  of umbrellas I've personally seen abandoned around town (place, colour,
+  condition, a one-line note), first person throughout. No form, no JS —
+  there's nothing here to submit.
 
 **Era rules — concrete and checkable:**
 
@@ -81,3 +82,7 @@ no lorem ipsum, no invented statistics or quotes):
 **Facts:** don't invent statistics or quotes. If a page needs a fact, keep it
 to things that are generally known, or make it clearly personal or opinion
 (this is a shrine to *my* lost umbrellas, not a researched report).
+
+**Voice:** no invented visitors, testimonials or quotes; all voices on the
+site are mine. The sightings page is my own log, not a guestbook of other
+people's submissions.
