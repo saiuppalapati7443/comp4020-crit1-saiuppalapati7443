@@ -60,6 +60,7 @@ hr {
 /* Site chrome: table-style centred layout */
 .page-frame {
   display: table;
+  table-layout: fixed;
   width: 100%;
   border-collapse: collapse;
 }
