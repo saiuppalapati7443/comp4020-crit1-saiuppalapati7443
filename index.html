@@ -3,17 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>COMP4020 prototype</title>
+    <title>A Shrine to Lost Umbrellas</title>
     <meta
       name="description"
-      content="Replace this with one sentence saying what this page is. A search result and a link preview both show it."
+      content="A memorial site for every umbrella ever left on a bus, a bar stool, or a park bench -- and never seen again."
     />
 
-    <!--
-      The link-preview card: public/card.png, 1200x630 --- replace it. The URL
-      resolves against this page, like any link. No og:title/og:description:
-      scrapers fall back to the <title> and description above.
-    -->
     <meta property="og:type" content="website" />
     <meta property="og:image" content="./card.png" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -21,18 +16,71 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header>
-      <nav aria-label="Primary">
-        <a href="./">Home</a>
-      </nav>
-    </header>
-    <main>
-      <h1>COMP4020 prototype</h1>
-      <p>
-        Replace this with your prototype. This week's brief is on the course website;
-        <code>spec/README.md</code> explains how the checks in this repo relate to it.
-      </p>
-    </main>
-    <script type="module" src="./main.ts"></script>
+    <div class="page-frame">
+      <header>
+        <nav aria-label="Primary">
+          <a href="./">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./collection.html">The Collection</a>
+          <a href="./field-notes.html">Field Notes</a>
+          <a href="./sightings.html">Sightings</a>
+        </nav>
+      </header>
+      <main>
+        <span class="under-construction">🚧 This shrine is forever under construction 🚧</span>
+
+        <h1>A Shrine to Lost Umbrellas</h1>
+
+        <div class="marquee" role="presentation">
+          <span>~*~ remembering the fallen, the forgotten, the left-behind ~*~ gone but not forgotten ~*~</span>
+        </div>
+
+        <p>
+          Every umbrella anyone has ever lost deserves a eulogy, not a shrug.
+          This is that eulogy, written one umbrella at a time. Somewhere out
+          there is a drawer, a lost-property box, a skip behind a train
+          station, full of umbrellas that someone once chose, carried, and
+          then, on one ordinary and unremarkable day, simply walked away
+          from. This site exists so that choice is not the last thing anyone
+          remembers about them.
+        </p>
+
+        <p>
+          I started keeping a list of my own lost umbrellas a few years ago,
+          mostly as a joke, and then it stopped being a joke. An umbrella is
+          a strange object: you only ever notice it is gone once it starts
+          raining again, which means every loss is discovered late, usually
+          in a doorway, usually in a hurry. There is something honest about
+          an object whose entire purpose is to be forgotten the moment the
+          weather turns nice.
+        </p>
+
+        <p>
+          This site has four other rooms. <a href="./about.html">About</a>
+          explains who is running this shrine and why. See
+          <a href="./collection.html">the collection</a> for individual
+          umbrellas, each with a name and a story. Read the
+          <a href="./field-notes.html">field notes</a> for my ongoing,
+          entirely unqualified observations about lost umbrellas as a
+          category of object. And sign, or at least read, the
+          <a href="./sightings.html">sightings</a> page --- a log of umbrella
+          sightings reported by visitors to this site.
+        </p>
+
+        <p class="hit-counter" aria-label="Visitor counter, decorative">
+          VISITOR No. 004127
+        </p>
+
+        <hr />
+      </main>
+      <footer class="webring">
+        <p>
+          This site is a proud member of the
+          <a href="https://en.wikipedia.org/wiki/Webring">Lost &amp; Found Webring</a>.
+          <a href="./">&larr; Previous</a> | <a href="./">Random</a> |
+          <a href="./">Next &rarr;</a>
+        </p>
+      </footer>
+    </div>
   </body>
 </html>
