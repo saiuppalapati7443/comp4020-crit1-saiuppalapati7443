@@ -1,26 +1,22 @@
-<!-- DRAFT: written by the agent from this session only. Rewrite this in your
-     own words before the crit --- this is a starting point, not the
-     submission. -->
+# Crit 1 reflection
 
 ## What was the breakthrough that moved the work forward?
 
-The breakthrough was writing the harness before touching a single page. Once
-`CLAUDE.md` fixed the topic, the five pages, the concrete era rules (fonts,
-colours, layout, the specific signature elements), and the hard constraints
-(zero JavaScript, semantic HTML, alt text, reduced motion, no horizontal
-scroll) as checkable facts, every page after that got built against a fixed
-target instead of being improvised one at a time. It also meant the checks
-had something real to catch: the aria-label misuse and the 390px overflow
-bug both turned up because the constraints were explicit enough to test
-against, not because I eyeballed every page for a mistake.
+I wrote the harness before any page. The first commit was CLAUDE.md: the
+topic, the GeoCities rules written as things that can be checked, and a hard
+"no JavaScript" line. The real breakthrough came from the checks, not the
+harness. The agent found two bugs I would not have seen by looking: an
+aria-label on a paragraph that the validator rejected, and a marquee that
+made the home page wider than a phone because the table layout was auto
+(f885832). The page looked fine at desktop. So "looks right" and "is right"
+are different tests, and the era look makes that worse, because
+broken-looking is the style. My own correction was about grounding: the
+sightings page read like other people's guestbook posts, so I made every
+voice on the site mine and added that as a rule in the harness.
 
 ## What did this work change about who I want to be as a software developer?
 
-I want to be someone who treats "it looks fine" as a claim to verify, not a
-conclusion. The screenshots caught a horizontal-scroll bug on the one page I
-was most confident about, and the HTML validator caught an ARIA misuse I
-wouldn't have noticed just by reading the markup. Neither check was required
-by the starter — I added both because I wanted a second opinion beyond what
-was already there. I think that's the habit worth keeping: build the thing,
-then go looking for the ways it's wrong, rather than trusting that it's
-right because it was built carefully.
+I want to be the developer who decides the rules first and then lets the
+checks argue with me. A nostalgic site is easy to fake. Making it valid,
+readable on a phone and honest about whose words are on it took decisions
+only I could make, and checks only the agent would run every time.
